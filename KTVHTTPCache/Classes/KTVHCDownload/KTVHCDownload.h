@@ -41,7 +41,7 @@ KTVHTTPCACHE_EXTERN NSString * const KTVHCContentTypeBinaryOctetStream;
  */
 @property (nonatomic, copy) NSArray<NSString *> *whitelistHeaderKeys;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> *additionalHeaders;
-@property (nonatomic, strong) NSMutableDictionary<NSURL *, NSDictionary<NSString *, NSString *> *> *additionalHeadersWithURL;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *additionalHeadersWithURL;
 
 /**
  *  Content-Type

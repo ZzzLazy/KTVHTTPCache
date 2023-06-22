@@ -114,7 +114,7 @@ NSString * const KTVHCContentTypeBinaryOctetStream      = @"binary/octet-stream"
             [mRequest setValue:obj forHTTPHeaderField:key];
         }
     }];
-    [self.additionalHeadersWithURL[request.URL] enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSString * _Nonnull obj, BOOL * _Nonnull stop) {
+    [self.additionalHeadersWithURL[request.URL.absoluteString] enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSString * _Nonnull obj, BOOL * _Nonnull stop) {
         [mRequest setValue:obj forHTTPHeaderField:key];
     }];
     [self.additionalHeaders enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *obj, BOOL *stop) {

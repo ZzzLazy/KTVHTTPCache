@@ -225,7 +225,7 @@ FOUNDATION_EXPORT const unsigned char KTVHTTPCacheVersionString[];
  *
  *  @param additionalHeaders : The headers will be added.
  */
-+ (void)downloadSetAdditionalHeaders:(NSDictionary<NSString *, NSString *> *)additionalHeaders forURL:(NSURL *)url;
++ (void)downloadSetAdditionalHeaders:(NSDictionary<NSString *, NSString *> *)additionalHeaders forURL:(NSString *)url;
 
 /**
  *  Get the current additional headers.
